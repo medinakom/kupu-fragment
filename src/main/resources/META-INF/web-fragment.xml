@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-fragment>
+    <data-source>
+        <name>java:global/KupuDataSource</name>
+        <class-name>org.hsqldb.jdbc.JDBCDataSource</class-name>
+        <url>jdbc:hsqldb:hsql://localhost/db</url>
+        <user>SA</user>
+        <password>s3cr3t57</password>
+        <max-pool-size>32</max-pool-size>
+        <min-pool-size>8</min-pool-size>
+    </data-source>
+    
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+    
+    <welcome-file-list>
+        <welcome-file>index.xhtml</welcome-file>
+    </welcome-file-list>
+        
+    <error-page>
+        <error-code>403</error-code>
+        <location>/403.xhtml</location>
+    </error-page>
+    
+    
+</web-fragment>
